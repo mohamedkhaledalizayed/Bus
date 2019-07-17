@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".view.activity.FreeRidesActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Free Rides"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_margin="@dimen/_16sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who says no to free trips?"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginStart="@dimen/_16sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give and get 20 DZD when your friends take their first ride."
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:src="@drawable/free_rides"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:text="MOHAMEDF8FS9"
+        android:background="@drawable/free_ride_bg"
+        android:textAlignment="center"
+        android:padding="@dimen/_5sdp"
+        android:layout_margin="@dimen/_16sdp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:src="@drawable/ic_menu_share"
+        android:padding="@dimen/_5sdp"
+        android:onClick="share"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/sign_in_bg"
+        />
+
+    
+</LinearLayout>

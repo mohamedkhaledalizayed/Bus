@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListPreference
+        android:key="key_language"
+        android:title="Language"
+        android:entries="@array/language"
+        android:entryValues="@array/foreground_color_values_array"
+        android:summary="%s"
+        />
+    <ListPreference
+        android:key="key_background_color"
+        android:title="Theme"
+        android:entries="@array/background_color_names_array"
+        android:entryValues="@array/background_color_values_array"
+        android:defaultValue="#DC143C"
+        android:summary="%s"
+        />
+
+    <PreferenceCategory
+        android:key="notifications_category"
+        android:title="Notifications">
+
+        <SwitchPreference
+            android:key="notifications"
+            android:title="Enable message notifications"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="location_category"
+        android:title="Location">
+
+        <SwitchPreference
+            android:key="notifications"
+            android:title="Enable GPS to get your location"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="feedback_category"
+        android:title="Feedback">
+
+        <SwitchPreference
+            android:key="notifications"
+            android:title="Enable feedback messages"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_35sdp"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:numStars="5"
+            android:id="@+id/rate_bar"
+            app:mrb_fillBackgroundStars="true"
+            app:mrb_progressTint="#ffc400"
+            android:layout_margin="@dimen/_15sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#a4a4a4"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:id="@+id/note"
+            android:layout_margin="@dimen/_15sdp"
+            android:inputType="textMultiLine"
+            android:background="@drawable/sign_in_border"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:background="@drawable/completedl_order_btn_bg"
+            android:text="Review"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/rate_doctor"
+            android:textSize="18sp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            />
+
+    </LinearLayout>
+</layout>

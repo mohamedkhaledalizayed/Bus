@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    android:orientation="vertical"
+    tools:context=".view.activity.ReservationActivity">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_40sdp"
+       android:orientation="horizontal"
+       android:layout_marginBottom="@dimen/_10sdp">
+
+       <LinearLayout
+           android:layout_width="@dimen/_2sdp"
+           android:layout_height="@dimen/_40sdp"
+           android:background="@drawable/sign_in_bg"
+           android:layout_marginEnd="@dimen/_10sdp"
+           >
+
+       </LinearLayout>
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Smart Village It Synergy"
+               android:textSize="@dimen/_12ssp"
+               android:textColor="#000"
+               android:id="@+id/trip_from"
+               android:layout_gravity="center_vertical"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="AL Fardous City "
+               android:textSize="@dimen/_12ssp"
+               android:textColor="#000"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:id="@+id/trip_to"
+               android:layout_below="@id/trip_from"
+               />
+
+
+       </RelativeLayout>
+   </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reservation_bg_border"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/06/2019"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/start_date"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:24 AM"
+            android:textColor="#000"
+            android:textSize="@dimen/_12ssp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/start_time"
+            android:layout_below="@+id/start_date"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arrival"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            android:id="@+id/end_date"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:44 AM"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#000"
+            android:id="@+id/end_time"
+            android:layout_below="@+id/end_date"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/line"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S730"
+            android:textColor="#000"
+            android:textSize="@dimen/_12ssp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/line_number"
+            android:layout_below="@+id/end_date"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#ccc"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Station"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_15sdp"
+        />
+    <params.com.stepview.StatusViewScroller
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:stepCount="9"
+        app:currentCount="4"
+        app:drawLabels="true"
+        android:entries="@array/stops"
+        app:circleColorType="fillStroke"
+        app:lineGap="2dp"
+        app:lineWidth="3dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:lineColor="@android:color/black"
+        app:lineColorIncomplete="#B4B7BA"
+        app:lineColorCurrent="#91A8D0"
+        app:circleColor="#CC004B8D"
+        app:circleColorCurrent="#004B8D"
+        app:circleColorIncomplete="#BCBCBE"
+        app:textColorLabels="@android:color/white"
+        app:textColorLabelsCurrent="@android:color/white"
+        app:textColorLabelsIncomplete="@android:color/black"
+        app:circleStrokeWidth="2dp"
+        app:circleStrokeColorCurrent="#91A8D0"
+        app:textSizeLabels="@dimen/_12ssp"
+        app:completeDrawable="@drawable/circle_red" />
+
+</LinearLayout>
+</layout>

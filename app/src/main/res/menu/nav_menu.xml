@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/profile_g">
+        <item android:title="@string/profile"
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/_my_wallet">
+        <item android:title="@string/my_wallet"
+            android:id="@+id/my_wallet"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/_notification">
+        <item android:title="Notifications"
+            android:id="@+id/notification"
+            android:icon="@drawable/ic_notifications_none_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/free_trips_">
+        <item android:title="Free Trips"
+            android:id="@+id/free_trips"
+            android:icon="@drawable/ic_card_giftcard_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/past_trips_">
+        <item android:title="Terms"
+            android:id="@+id/terms"
+            android:icon="@drawable/ic_security_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/_customer_feedback">
+        <item android:title="About App"
+            android:id="@+id/about_app"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/_share">
+        <item android:title="@string/share"
+            android:id="@+id/share"
+            android:icon="@drawable/ic_share_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/_settings">
+        <item android:title="@string/settings"
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"/>
+    </group>
+
+    <group android:id="@+id/_logout">
+        <item android:title="@string/logout"
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+    </group>
+
+</menu>

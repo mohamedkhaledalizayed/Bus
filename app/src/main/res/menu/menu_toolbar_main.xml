@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ic_main_profile"
+        android:icon="@drawable/ic_main_toolbar_icon_profile"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ic_main_location"
+        android:icon="@drawable/ic_main_toolbar_icon_location_on"
+        android:orderInCategory="100"
+        android:title="Location"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ic_main_help"
+        android:icon="@drawable/ic_main_toolbar_icon_help"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ic_main_view_standard"
+        android:icon="@drawable/ic_main_toolbar_icon_view_3"
+        android:orderInCategory="100"
+        android:title="View Standard"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/ic_main_view_large"
+        android:icon="@drawable/ic_main_toolbar_icon_view_3"
+        android:orderInCategory="100"
+        android:title="View Large"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/ic_main_language"
+        android:icon="@drawable/ic_navigation_language"
+        android:orderInCategory="100"
+        android:title="Language"
+        app:showAsAction="ifRoom" />
+</menu>

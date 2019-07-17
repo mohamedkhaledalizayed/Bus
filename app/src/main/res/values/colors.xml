@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#05004E</color>
+    <color name="colorPrimaryDark">#05004E</color>
+    <color name="colorAccent">#D5436A</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="background_color">#FFF</color>
+    <color name="orange">#FF9800</color>
+    <color name="green">#4CAF50</color>
+    <color name="color_background_table_text_color">#000000</color>
+    <color name="color_background_table_heading_text_color">#FFFFFF</color>
+    <color name="color_background_screen">#E8E7ED</color>
+    <color name="bgBottomNavigation">#292732</color>
+    <color name="color_indicator_color_selected">#525171</color>
+    <color name="color_indicator_color_unselected">#FFFFFF</color>
+    <color name="color_background_color">#ebeaed</color>
+
+    <array name="colors">
+        <item name="all" type="color">@color/colorPrimary</item>
+        <item name="design" type="color">@color/colorAccent</item>
+        <item name="ios" type="color">#3b9aee</item>
+        <item name="android" type="color">#9bc53d</item>
+        <item name="web" type="color">#f4a261</item>
+        <item name="sales" type="color">#20bf55</item>
+        <item name="quality" type="color">#9f9fed</item>
+    </array>
+
+</resources>

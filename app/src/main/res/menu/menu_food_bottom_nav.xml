@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_food_main"
+        android:icon="@drawable/ic_food_bn_main"
+        android:title="@string/ic_bottom_nav_food_main" />
+
+    <item
+        android:id="@+id/bottom_nav_food_order"
+        android:icon="@drawable/ic_food_bn_order"
+        android:title="@string/ic_bottom_nav_food_order" />
+
+    <item
+        android:id="@+id/bottom_nav_food_pickup"
+        android:icon="@drawable/ic_food_bn_pick_up"
+        android:title="@string/ic_bottom_nav_food_pick_up" />
+
+    <item
+        android:id="@+id/bottom_nav_food_help"
+        android:icon="@drawable/ic_nav_bus_help"
+        android:title="@string/ic_bottom_nav_food_help" />
+
+</menu>
