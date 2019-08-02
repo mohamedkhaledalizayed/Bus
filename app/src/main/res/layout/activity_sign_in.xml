@@ -40,18 +40,18 @@
                     android:textAlignment="center"
                     >
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/edit_text_bg"
-                    android:hint="User name"
-                    android:textColorHint="#A7A7AA"
-                    android:inputType="textEmailAddress"
-                    android:padding="@dimen/_10sdp"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textSize="@dimen/_10ssp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="User name"
+                        android:textColorHint="#A7A7AA"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_10ssp" />
 
                 </android.support.design.widget.TextInputLayout>
 
