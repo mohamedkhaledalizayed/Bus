@@ -14,6 +14,9 @@
     <color name="color_indicator_color_selected">#525171</color>
     <color name="color_indicator_color_unselected">#FFFFFF</color>
     <color name="color_background_color">#ebeaed</color>
+    <color name="black_color">#000</color>
+    <color name="gray_color">#CCC</color>
+    <color name="light_gray">#A7A7AA</color>
 
     <array name="colors">
         <item name="all" type="color">@color/colorPrimary</item>

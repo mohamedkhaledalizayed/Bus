@@ -106,11 +106,6 @@ public class FragmentBus1 extends Fragment implements View.OnClickListener,
         LocationManager manager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
         if (manager != null) {
             if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-//                Utilities.showBasicDialog(getActivity(), getString(R.string.enable_gps)
-//                        , getString(R.string.enable_gps_message)
-//                        , getString(R.string.settings), getString(R.string.cancel)
-//                        , positiveEnableGPS
-//                        , cancelDialog);
 
                 cardView.setVisibility(View.VISIBLE);
             } else {

@@ -18,7 +18,7 @@ public class WalletActivity extends AppCompatActivity {
         setContentView(R.layout.activity_wallet);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Payment Method");
+        getSupportActionBar().setTitle(getString(R.string.payment_method));
     }
 
 

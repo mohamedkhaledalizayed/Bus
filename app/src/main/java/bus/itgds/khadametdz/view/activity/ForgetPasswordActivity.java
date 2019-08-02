@@ -25,10 +25,10 @@ public class ForgetPasswordActivity extends AppCompatActivity{
     }
 
     public void sms(View view) {
-        binding.verifyBy.setHint("Phone Number");
+        binding.verifyBy.setHint((R.string.phone_number));
     }
 
     public void email(View view) {
-        binding.verifyBy.setHint("Email");
+        binding.verifyBy.setHint((R.string.email));
     }
 }

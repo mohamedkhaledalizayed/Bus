@@ -14,7 +14,7 @@ public class TicketDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ticket_details);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Ticket Details");
+        getSupportActionBar().setTitle(getString(R.string.ticket_details));
     }
 
     @Override

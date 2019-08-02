@@ -12,7 +12,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import net.glxn.qrgen.android.QRCode;
@@ -39,7 +38,7 @@ public class ReservationDetailsActivity extends AppCompatActivity {
         id = getIntent().getStringExtra("id");
         binding = DataBindingUtil.setContentView(this, R.layout.activity_reservation_details);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Reservation Details");
+        getSupportActionBar().setTitle(getString(R.string.res_details));
 
 
 

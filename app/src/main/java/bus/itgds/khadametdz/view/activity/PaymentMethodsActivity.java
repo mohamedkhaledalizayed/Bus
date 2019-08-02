@@ -16,7 +16,7 @@ public class PaymentMethodsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_payment_methods);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Payment Methods");
+        getSupportActionBar().setTitle(getString(R.string.payment_method));
     }
 
     @Override

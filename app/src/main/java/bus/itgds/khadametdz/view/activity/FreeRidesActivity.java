@@ -17,7 +17,7 @@ public class FreeRidesActivity extends AppCompatActivity {
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Free Rides");
+        getSupportActionBar().setTitle(getString(R.string.free_rides));
     }
 
 

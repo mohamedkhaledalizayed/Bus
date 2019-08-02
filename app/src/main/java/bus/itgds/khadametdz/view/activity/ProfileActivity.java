@@ -10,13 +10,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
 import com.nabinbhandari.android.permissions.PermissionHandler;
 import com.nabinbhandari.android.permissions.Permissions;
+
 import java.io.File;
 import java.util.ArrayList;
+
 import bus.itgds.khadametdz.R;
 import bus.itgds.khadametdz.databinding.ActivityProfileBinding;
-import bus.itgds.khadametdz.view.adapter.TicketAdapter;
 import pl.aprilapps.easyphotopicker.DefaultCallback;
 import pl.aprilapps.easyphotopicker.EasyImage;
 
@@ -24,14 +26,13 @@ import pl.aprilapps.easyphotopicker.EasyImage;
 public class ProfileActivity extends AppCompatActivity {
 
     private ActivityProfileBinding binding;
-    private TicketAdapter mAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_profile);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Profile");
+        getSupportActionBar().setTitle(R.string.profile);
     }
 
     @Override

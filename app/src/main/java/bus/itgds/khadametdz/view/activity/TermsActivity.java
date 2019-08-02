@@ -18,7 +18,7 @@ public class TermsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_terms);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Terms");
+        getSupportActionBar().setTitle(getString(R.string.terms));
 
     }
 

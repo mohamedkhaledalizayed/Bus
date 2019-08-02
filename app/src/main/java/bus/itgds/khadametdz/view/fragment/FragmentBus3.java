@@ -1,7 +1,5 @@
 package bus.itgds.khadametdz.view.fragment;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -22,8 +20,6 @@ import java.util.ArrayList;
 
 import bus.itgds.khadametdz.R;
 import bus.itgds.khadametdz.model.ModelBusStationDetail;
-import bus.itgds.khadametdz.view.activity.ActivityMaps;
-import bus.itgds.khadametdz.view.activity.MapActivity;
 
 public class FragmentBus3 extends Fragment {
 

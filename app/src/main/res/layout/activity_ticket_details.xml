@@ -22,9 +22,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MMohamed Khaled"
+                android:text="@string/mmohamed_khaled"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:textColor="#000"
+                android:textColor="@color/black_color"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_toEndOf="@+id/driver_image"
                 android:id="@+id/driver_name"
@@ -33,7 +33,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Toyota Hiace 8613"
+                android:text="@string/toyota_hiace_8613"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_toEndOf="@+id/driver_image"
@@ -54,11 +54,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="How was your trip with Driver Name?"
+            android:text="@string/how_was_your_trip_with_driver_name"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_15sdp"
             android:textSize="@dimen/_12ssp"
-            android:textColor="#000"
+            android:textColor="@color/black_color"
             />
 
         <RatingBar
@@ -72,7 +72,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
-            android:background="#ccc"
+            android:background="@color/gray_color"
             android:layout_marginTop="@dimen/_15sdp"
             />
 
@@ -99,9 +99,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Smart Village It Synergy"
+                    android:text="@string/smart_village_it_synergy"
                     android:textSize="@dimen/_12ssp"
-                    android:textColor="#000"
+                    android:textColor="@color/black_color"
                     android:id="@+id/trip_from"
                     android:layout_gravity="center_vertical"
                     />
@@ -109,9 +109,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AL Fardous City "
+                    android:text="@string/al_fardous_city"
                     android:textSize="@dimen/_12ssp"
-                    android:textColor="#000"
+                    android:textColor="@color/black_color"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:id="@+id/trip_to"
                     android:layout_below="@id/trip_from"
@@ -134,7 +134,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="10/06/2019"
+                android:text="@string/_10_06_2019"
                 android:textStyle="bold"
                 android:textSize="@dimen/_10ssp"
                 android:layout_alignParentStart="true"
@@ -144,7 +144,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="07:24 AM"
+                android:text="@string/_07_24_am"
                 android:textColor="#000"
                 android:textSize="@dimen/_12ssp"
                 android:layout_alignParentStart="true"
@@ -155,7 +155,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Arrival"
+                android:text="@string/arrival"
                 android:textStyle="bold"
                 android:textSize="@dimen/_10ssp"
                 android:id="@+id/end_date"
@@ -165,9 +165,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="07:44 AM"
+                android:text="@string/_07_44_am"
                 android:textSize="@dimen/_12ssp"
-                android:textColor="#000"
+                android:textColor="@color/black_color"
                 android:id="@+id/end_time"
                 android:layout_below="@+id/end_date"
                 android:layout_centerHorizontal="true"
@@ -176,7 +176,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Line"
+                android:text="@string/line"
                 android:textStyle="bold"
                 android:textSize="@dimen/_10ssp"
                 android:layout_marginEnd="@dimen/_2sdp"
@@ -187,8 +187,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="S730"
-                android:textColor="#000"
+                android:text="@string/s730"
+                android:textColor="@color/black_color"
                 android:textSize="@dimen/_12ssp"
                 android:layout_alignParentEnd="true"
                 android:id="@+id/line_number"
@@ -202,7 +202,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
-            android:background="#ccc"
+            android:background="@color/gray_color"
             android:layout_marginTop="@dimen/_20sdp"
             />
 
@@ -215,7 +215,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cash"
+                android:text="@string/cash"
                 android:textStyle="bold"
                 android:id="@+id/cash"
                 android:layout_alignParentStart="true"
@@ -224,9 +224,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="35 DZD"
+                android:text="@string/_35_dzd"
                 android:textSize="@dimen/_15ssp"
-                android:textColor="#000"
+                android:textColor="@color/black_color"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:id="@+id/cash_value"
                 android:layout_below="@+id/cash"
@@ -235,7 +235,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Number of seats"
+                android:text="@string/number_of_seats"
                 android:id="@+id/seats"
                 android:textStyle="bold"
                 android:layout_alignParentEnd="true"
@@ -246,9 +246,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1"
+                    android:text="@string/_1"
                     android:layout_gravity="center"
-                    android:textColor="#000"
+                    android:textColor="@color/black_color"
                     android:id="@+id/seats_number"
                     android:layout_margin="@dimen/_10sdp"
                     android:textSize="@dimen/_14ssp"
@@ -260,10 +260,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Promotion"
+                android:text="@string/promotion"
                 android:id="@+id/promotion"
                 android:layout_gravity="center"
-                android:textColor="#000"
+                android:textColor="@color/black_color"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:textSize="@dimen/_14ssp"
                 android:layout_alignParentStart="true"
@@ -274,9 +274,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-15"
+                android:text="@string/_15"
                 android:layout_gravity="center"
-                android:textColor="#000"
+                android:textColor="@color/black_color"
                 android:id="@+id/promotion_value"
                 android:textSize="@dimen/_14ssp"
                 android:layout_marginEnd="@dimen/_10sdp"
@@ -288,9 +288,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Credit"
+                android:text="@string/credit"
                 android:layout_gravity="center"
-                android:textColor="#000"
+                android:textColor="@color/black_color"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:textSize="@dimen/_14ssp"
                 android:layout_alignParentStart="true"
@@ -303,7 +303,7 @@
                 android:layout_height="wrap_content"
                 android:text="-10"
                 android:layout_gravity="center"
-                android:textColor="#000"
+                android:textColor="@color/black_color"
                 android:id="@+id/credit_value"
                 android:textSize="@dimen/_14ssp"
                 android:layout_margin="@dimen/_10sdp"
@@ -316,7 +316,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
-            android:background="#ccc"
+            android:background="@color/gray_color"
             android:layout_marginTop="@dimen/_15sdp"
             />
 

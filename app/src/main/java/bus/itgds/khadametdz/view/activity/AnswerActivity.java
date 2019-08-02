@@ -23,7 +23,7 @@ public class AnswerActivity extends AppCompatActivity {
         binding.answer.setText("Answer Screen "+answer);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("FAQ");
+        getSupportActionBar().setTitle(getString(R.string.faq));
     }
 
 

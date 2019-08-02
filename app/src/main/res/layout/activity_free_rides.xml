@@ -4,23 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="@color/color_white"
     tools:context=".view.activity.FreeRidesActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Free Rides"
+        android:text="@string/get_free_rides"
         android:textSize="@dimen/_18ssp"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="@color/black_color"
         android:layout_margin="@dimen/_16sdp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Who says no to free trips?"
+        android:text="@string/who_says_no_to_free_trips"
         android:textSize="@dimen/_14ssp"
         android:layout_marginStart="@dimen/_16sdp"
         />
@@ -28,7 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Give and get 20 DZD when your friends take their first ride."
+        android:text="@string/give_and_get"
         android:textSize="@dimen/_14ssp"
         android:layout_marginEnd="@dimen/_16sdp"
         android:layout_marginStart="@dimen/_16sdp"
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/_15ssp"
-        android:text="MOHAMEDF8FS9"
+        android:text="@string/mohamedf8fs9"
         android:background="@drawable/free_ride_bg"
         android:textAlignment="center"
         android:padding="@dimen/_5sdp"

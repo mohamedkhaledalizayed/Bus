@@ -35,14 +35,3 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     }
 }
-
-/*
-*
-•	SIGN IN should propose the Signup via Facebook or Gmail ( Same like in restaurant)
-•	Sign up - need to add the symbols, also mandatory field in red star
-•	When click on sign up, should go to the OTP number notification before to complete access
-•	When Access to application is not requesting the GPS to be enabled.
-•	Profile totally not done !!!!
-•	There is no Menu for setting like other APP.
-•	Complete the RFS for driver // amine
-*/

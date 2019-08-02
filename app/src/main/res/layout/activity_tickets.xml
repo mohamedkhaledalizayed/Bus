@@ -22,9 +22,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Driver Name"
+                android:text="@string/driver_name"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:textColor="#000"
+                android:textColor="@color/black_color"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_toEndOf="@+id/driver_image"
                 android:id="@+id/driver_name"
@@ -47,14 +47,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/_1sdp"
-            android:background="#ccc"
+            android:background="@color/gray_color"
             android:layout_marginTop="@dimen/_15sdp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Trip Status"
+            android:text="@string/trip_status"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_15sdp"
             android:textSize="@dimen/_12ssp"

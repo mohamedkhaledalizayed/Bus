@@ -7,20 +7,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
 import bus.itgds.khadametdz.R;
 import bus.itgds.khadametdz.databinding.ActivityReservationBinding;
 
 public class ReservationActivity extends AppCompatActivity {
 
     private ActivityReservationBinding binding;
-    private int seatsNumber = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_reservation);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Reservation");
+        getSupportActionBar().setTitle(getString(R.string.reservation));
     }
 
     @Override

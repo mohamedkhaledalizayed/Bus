@@ -2,13 +2,10 @@ package bus.itgds.khadametdz.view.activity;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,9 +15,7 @@ import java.util.ArrayList;
 import bus.itgds.khadametdz.R;
 import bus.itgds.khadametdz.databinding.ActivityBusSeatsBinding;
 import bus.itgds.khadametdz.utils.AppUtils;
-import bus.itgds.khadametdz.view.adapter.NotificationAdapter;
 import bus.itgds.khadametdz.view.adapter.SeatsAdapter;
-import bus.itgds.khadametdz.view.fragment.BusImageFragment;
 
 public class BusSeatsActivity extends AppCompatActivity {
 
@@ -34,7 +29,7 @@ public class BusSeatsActivity extends AppCompatActivity {
 
         seatArrayList = new ArrayList<>();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Seats");
+        getSupportActionBar().setTitle(getString(R.string.seats));
 
         mAdapter = new SeatsAdapter(this,seatArrayList);
         binding.seatsRecycler.setLayoutManager(new GridLayoutManager(this,5));
@@ -156,14 +151,6 @@ public class BusSeatsActivity extends AppCompatActivity {
         seatArrayList.add(seat);
 
         mAdapter.notifyDataSetChanged();
-    }
-
-
-    public void showImage(View view) {
-        FragmentManager fm = getSupportFragmentManager();
-        BusImageFragment editNameDialogFragment =new BusImageFragment();
-        editNameDialogFragment.show(fm, "");
-        editNameDialogFragment.setStyle(DialogFragment.STYLE_NO_TITLE, android.R.style.Theme_Holo_Light_Dialog_NoActionBar_MinWidth);
     }
 
     public void book(View view) {

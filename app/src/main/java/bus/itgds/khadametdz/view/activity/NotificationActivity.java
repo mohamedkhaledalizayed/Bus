@@ -24,7 +24,7 @@ public class NotificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_notification);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Notification");
+        getSupportActionBar().setTitle(getString(R.string.notifications));
 
         mAdapter = new NotificationAdapter(this,new ArrayList<String>());
         binding.notificationRecycler.setLayoutManager(new LinearLayoutManager(this));

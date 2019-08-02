@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"
-                android:text="Golden Member"
+                android:text="@string/golden_member"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/_10ssp" />
 
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Mohamed"
+            android:text="@string/mohamed"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/_12ssp" />
 
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_5sdp"
-            android:text="1234567890"
+            android:text="@string/_1234567890"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/_12ssp" />
 
@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_5sdp"
-            android:text="Egypt, Cairo, Denshway"
+            android:text="@string/egypt_cairo_denshway"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/_12ssp" />
 
@@ -101,7 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_5sdp"
-            android:text="mohamedsmile999@gmaile.com"
+            android:text="@string/mohamedsmile999_gmaile_com"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/_12ssp" />
 

@@ -1,14 +1,8 @@
 package bus.itgds.khadametdz.view;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.location.Location;
-import android.location.LocationManager;
-import android.net.Uri;
-import android.provider.Settings;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
@@ -19,41 +13,23 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.crowdfire.cfalertdialog.CFAlertDialog;
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationCallback;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationResult;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.nabinbhandari.android.permissions.PermissionHandler;
-import com.nabinbhandari.android.permissions.Permissions;
-
-import java.util.ArrayList;
 
 import bus.itgds.khadametdz.R;
-import bus.itgds.khadametdz.utils.Utilities;
 import bus.itgds.khadametdz.view.activity.AboutActivity;
-import bus.itgds.khadametdz.view.activity.FeedBackActivity;
 import bus.itgds.khadametdz.view.activity.FreeRidesActivity;
 import bus.itgds.khadametdz.view.activity.NotificationActivity;
 import bus.itgds.khadametdz.view.activity.ProfileActivity;
-import bus.itgds.khadametdz.view.activity.ReservationActivity;
 import bus.itgds.khadametdz.view.activity.ReservationDetailsActivity;
 import bus.itgds.khadametdz.view.activity.SettingsActivity;
 import bus.itgds.khadametdz.view.activity.TermsActivity;
-import bus.itgds.khadametdz.view.activity.TicketDetailsActivity;
-import bus.itgds.khadametdz.view.activity.TicketsActivity;
 import bus.itgds.khadametdz.view.activity.WalletActivity;
 import bus.itgds.khadametdz.view.fragment.FragmentBus1;
 import bus.itgds.khadametdz.view.fragment.FragmentBus2;
@@ -68,10 +44,6 @@ public class MainActivity extends AppCompatActivity implements ITicketHandler,
     private String pageNameString = "FragInfoPage";
     private BottomNavigationView navigation;
     private DrawerLayout drawer;
-
-
-    private FusedLocationProviderClient fusedLocationProviderClient;
-    private LocationCallback locationCallback;
     private FrameLayout notification;
     private TextView title;
     @Override
@@ -82,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements ITicketHandler,
         toolbar = findViewById(R.id.custom_toolbar);
         title = findViewById(R.id.toolbar_title);
         notification = findViewById(R.id.notification);
-        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         title.setText(getResources().getString(R.string.ic_bottom_nav_bus_reservation));
 
         navigation = findViewById(R.id.navigation);
@@ -107,7 +78,6 @@ public class MainActivity extends AppCompatActivity implements ITicketHandler,
             }
         });
         toolbar.setNavigationIcon(R.drawable.ic_menu_black_24dp);
-//        location();
     }
 
 
@@ -115,105 +85,6 @@ public class MainActivity extends AppCompatActivity implements ITicketHandler,
     protected void onResume() {
         super.onResume();
     }
-
-    public void location() {
-
-        String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
-
-        Permissions.check(this/*context*/, permissions, null/*rationale*/, null/*options*/, new PermissionHandler() {
-                    @Override
-                    public void onGranted() {
-                        // do your task.
-                        Toast.makeText(MainActivity.this, "Done", Toast.LENGTH_LONG).show();
-                        sendCurrentLocation();
-                    }
-
-                    @Override
-                    public void onDenied(Context context, ArrayList<String> deniedPermissions) {
-//                        super.onDenied(context, deniedPermissions);
-                        Toast.makeText(MainActivity.this, "Denied", Toast.LENGTH_LONG).show();
-                    }
-                }
-
-        );
-    }
-
-    @SuppressLint("MissingPermission")
-    private void sendCurrentLocation() {
-
-        LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        if (manager != null) {
-            if (!manager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-                Utilities.showBasicDialog(this, getString(R.string.enable_gps)
-                        , getString(R.string.enable_gps_message)
-                        , getString(R.string.settings), getString(R.string.cancel)
-                        , positiveEnableGPS
-                        , cancelDialog);
-            } else {
-                fusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
-                    @Override
-                    public void onSuccess(Location location) {
-                        if (location != null) {
-
-                            Log.e("lat", location.getLatitude() + " : " + location.getLongitude());
-
-
-
-                        } else {
-                            requestLocationUpdates();
-                        }
-
-                    }
-                });
-            }
-        } else
-            Utilities.showShortToast(this, "something_went_wrong");
-
-    }
-
-
-    @SuppressLint("MissingPermission")
-    private void requestLocationUpdates() {
-        LocationRequest locationRequest = LocationRequest.create();
-        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        locationRequest.setInterval(20000);
-        locationCallback = new LocationCallback() {
-            @Override
-            public void onLocationResult(LocationResult locationResult) {
-                if (locationResult == null) {
-                    return;
-                }
-                for (Location location : locationResult.getLocations()) {
-                    if (location != null) {
-
-                        Log.e("lat", location.getLatitude() + " : " + location.getLongitude());
-
-
-                        if (fusedLocationProviderClient != null)
-                            fusedLocationProviderClient.removeLocationUpdates(locationCallback);
-
-                    }
-                }
-            }
-        };
-
-        fusedLocationProviderClient.requestLocationUpdates(locationRequest, locationCallback, null);
-    }
-
-    private DialogInterface.OnClickListener positiveEnableGPS = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialogInterface, int i) {
-            dialogInterface.dismiss();
-            startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
-        }
-    };
-
-    private DialogInterface.OnClickListener cancelDialog = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialogInterface, int i) {
-            dialogInterface.dismiss();
-        }
-    };
 
 
     @Override
@@ -342,12 +213,6 @@ public class MainActivity extends AppCompatActivity implements ITicketHandler,
 
     @Override
     public void onBackPressed() {
-//        if (pageNameString.equals("FragReservationPage")) {
-//            super.onBackPressed();
-//        } else {
-//            navigation.setSelectedItemId(R.id.bottom_nav_bus_reservation);
-//            pageNameString = "FragReservationPage";
-//        }
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {

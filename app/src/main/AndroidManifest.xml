@@ -28,7 +28,6 @@
             android:name=".view.activity.TermsActivity"
             android:label="@string/title_activity_terms" />
         <activity android:name=".view.activity.AboutActivity" />
-        <activity android:name=".view.activity.PastTripsActivity" />
         <activity android:name=".view.activity.FreeRidesActivity" />
         <activity android:name=".view.activity.WalletActivity" />
         <activity android:name=".view.activity.SettingsActivity" />
@@ -74,9 +73,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name=".view.activity.ActivityMaps"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <activity
             android:name=".view.activity.ScanningBareCodeActivity"
             android:theme="@style/AppTheme.No" />

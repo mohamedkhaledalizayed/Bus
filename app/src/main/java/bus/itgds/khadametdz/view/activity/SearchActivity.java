@@ -34,7 +34,7 @@ public class SearchActivity extends AppCompatActivity implements ITicketHandler,
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_search);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Search");
+        getSupportActionBar().setTitle(getString(R.string.search));
 
         mColors = getResources().getIntArray(R.array.colors);
         mTitles = getResources().getStringArray(R.array.job_titles);
@@ -44,7 +44,7 @@ public class SearchActivity extends AppCompatActivity implements ITicketHandler,
         mFilter.setListener(this);
 
         //the text to show when there's no selected items
-        mFilter.setNoSelectedItemText("No Filter");
+        mFilter.setNoSelectedItemText(getString(R.string.no_filter));
         mFilter.build();
 
         mAdapter = new TicketAdapter(this,new ArrayList<String>());

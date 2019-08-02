@@ -21,34 +21,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_30sdp"
-                android:text="Verification"
+                android:text="@string/verification"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/_25ssp"
                 android:textStyle="bold" />
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="@dimen/_20sdp"
-                app:cardCornerRadius="@dimen/_15sdp">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@drawable/edit_text_bg"
-                    android:hint="Verification Code"
+                    android:hint="@string/verification_code"
+                    android:layout_marginTop="@dimen/_20sdp"
                     android:inputType="textPassword"
                     android:padding="@dimen/_10sdp"
                     android:textAlignment="center"
-                    android:textColorHint="#A7A7AA"
+                    android:textColorHint="@color/light_gray"
                     android:textSize="@dimen/_10ssp" />
-
-            </android.support.v7.widget.CardView>
-
-
 
 
             <Button
@@ -57,8 +48,8 @@
                 android:layout_marginTop="@dimen/_20sdp"
                 android:background="@drawable/search_bg"
                 android:onClick="verify"
-                android:text="Verify"
-                android:textColor="#fff" />
+                android:text="@string/verify"
+                android:textColor="@color/color_white" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -71,7 +62,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:layout_marginBottom="@dimen/_20sdp"
-                    android:text="Dont received the code?"
+                    android:text="@string/dont_received_the_code"
                     android:textSize="@dimen/_10ssp" />
 
                 <TextView
@@ -80,7 +71,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:layout_marginBottom="@dimen/_20sdp"
-                    android:text=" Send Code"
+                    android:text="@string/send_code"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/_12ssp"
                     android:textStyle="bold" />
